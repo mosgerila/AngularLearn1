@@ -9,7 +9,7 @@
   </div>
   <div fxFlex>
     <md-grid-list  cols="2" rowHeight="100px">
-      <md-grid-tile *ngFor="let serv of services">
+      <md-grid-tile *ngFor="let serv of services" (click)="onSelect(serv)">
         <img height="100px" src={{serv.image}} alt={{serv.name}}>
         <md-grid-tile-footer>
         <h1 md-line>{{serv.name | uppercase}}</h1>
@@ -19,49 +19,5 @@
     </md-grid-list>
   </div>
 
-  <div class="container"
-  fxLayout="row"
-  fxLayoutGap="10px">
-
-  <div fxFlex *ngIf="SelectedService">
-    
-      
-    
-    <md-card>
-      <md-card-header>
-        <md-card-title>
-          <h3>{{SelectedService.name | uppercase}}</h3>
-        </md-card-title>
-      </md-card-header>
-      <img md-card-image height="100px" src={{SelectedService.image}}>
-      <md-card-content>
-        <p>{{SelectedService.description}}</p>
-      </md-card-content>
-      <md-card-actions>
-          <button md-button>Like</button>
-          <button md-button>Share</button>
-      </md-card-actions>
-    </md-card>  
-  </div>
-  <div fxFlex *ngIf="SelectedService">
-      
-        
-      
-      <md-card>
-        <md-card-header>
-          <md-card-title>
-            <h3>{{SelectedService.name | uppercase}}</h3>
-          </md-card-title>
-        </md-card-header>
-        <img md-card-image height="100px" src={{SelectedService.image}}>
-        <md-card-content>
-          <p>{{SelectedService.description}}</p>
-        </md-card-content>
-        <md-card-actions>
-            <button md-button>Like</button>
-            <button md-button>Share</button>
-        </md-card-actions>
-      </md-card>  
-    </div>
-  </div>   
+  <app-items [serv]="SelectedService"></app-items>
 </div> 

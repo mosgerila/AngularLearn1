@@ -1,3 +1,5 @@
+import {Comment} from './comment';
+
 export class Service{
      name:String;
      image:string;
@@ -5,4 +7,5 @@ export class Service{
      price:string;
      time:string;
      description:string;
+     comments: Comment[];
 }

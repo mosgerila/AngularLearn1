@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import {Service} from '../Shared/service'
 
 @Component({
   selector: 'app-items',
@@ -8,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class ItemsComponent implements OnInit {
 
   constructor() { }
-
+  
+ @Input() serv:Service;
+ 
+ 
+  
   ngOnInit() {
   }
 

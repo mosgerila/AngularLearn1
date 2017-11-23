@@ -1,3 +1,45 @@
-<p>
-  items works!
-</p>
+<div class="container"
+fxLayout="row"
+fxLayoutGap="10px">
+
+<div fxFlex *ngIf="serv">
+  
+    
+  
+  <md-card>
+    <md-card-header>
+      <md-card-title>
+        <h3>{{serv.name | uppercase}}</h3>
+      </md-card-title>
+    </md-card-header>
+    <img md-card-image height="100px" src={{serv.image}}>
+    <md-card-content>
+      <p>{{serv.description}}</p>
+    </md-card-content>
+    <md-card-actions>
+        <button md-button>Like</button>
+        <button md-button>Share</button>
+    </md-card-actions>
+  </md-card>  
+</div>
+<div fxFlex *ngIf="serv">
+    
+      
+    
+    <md-card>
+      <md-card-header>
+        <md-card-title>
+          <h3>{{serv.name | uppercase}}</h3>
+        </md-card-title>
+      </md-card-header>
+      <img md-card-image height="100px" src={{serv.image}}>
+      <md-card-content>
+        <p>{{serv.description}}</p>
+      </md-card-content>
+      <md-card-actions>
+          <button md-button>Like</button>
+          <button md-button>Share</button>
+      </md-card-actions>
+    </md-card>  
+  </div>
+</div>   
