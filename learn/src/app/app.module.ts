@@ -4,14 +4,19 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
+
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { ItemsComponent } from './items/items.component';
+import { ServiceComponent } from './service/service.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ItemsComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
