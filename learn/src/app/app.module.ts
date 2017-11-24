@@ -10,6 +10,7 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
 import { ServiceComponent } from './service/service.component';
+import {OperationService} from './Services2/operation.service'
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import { ServiceComponent } from './service/service.component';
     FlexLayoutModule
 
   ],
-  providers: [],
+  providers: [OperationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

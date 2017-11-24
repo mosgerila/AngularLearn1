@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import {Service} from '../Shared/service';
 
-import {serv} from '../Shared/services';
+import {OperationService} from '../Services2/operation.service'
 
 @Component({
   selector: 'app-service',
@@ -12,12 +12,13 @@ import {serv} from '../Shared/services';
 export class ServiceComponent implements OnInit {
    
   SelectedService:Service;
-  services : Service[] = serv;
+  services : Service[];
 
 
-  constructor() { }
+  constructor(private opServ:OperationService) { }
 
   ngOnInit() {
+    this.services=  this.opServ.getServices();
   }
   
   onSelect(serv:Service){
