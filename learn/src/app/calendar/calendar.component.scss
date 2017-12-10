@@ -1,0 +1,47 @@
+.table {
+    display: flex;
+    border-collapse: separate;
+    border-spacing: 1px;
+    border-color: rgba(191, 198, 199, 0.829);
+    border: 1px solid rgba(191, 198, 199, 0.829);
+    text-align: right;
+    font-size: x-small;
+    text-decoration-color: gray;
+    flex-direction: column;
+}
+
+.container
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tbody{
+    display: flex;
+    border-collapse: separate;
+    border-spacing: 1px;
+    border-color: black;
+    border: 1px solid black;
+    flex-direction: column;
+    
+}
+
+.bigTd{
+    display: flex;
+    border-collapse: separate;
+    border-spacing: 1px;
+    border-color: rgba(191, 198, 199, 0.829);
+    border: 1px solid rgba(191, 198, 199, 0.829);
+    flex-basis: 100%;
+    min-height: 10px;
+    max-width: 300px
+}
+
+.buttonstyle{
+    display: flex;
+    position: absolute;
+    color: violet;
+    min-height: 100px;
+    font-size: 7px;
+    text-align: center;
+}

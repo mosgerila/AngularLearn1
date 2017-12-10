@@ -13,6 +13,10 @@ export class ServiceComponent implements OnInit {
    
   SelectedService:Service;
   services : Service[];
+  
+ 
+
+  
 
 
   constructor(private opServ:OperationService) { }

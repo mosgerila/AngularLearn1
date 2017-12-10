@@ -1,0 +1,30 @@
+
+<div fxFlexLayout='column'>
+  
+<table class='table' fxFlexLayout='column'>
+ <thead class="table">
+  <tr>
+    <th fxFlex="50px" class='table' #test>{{viewHeight}}</th>
+    <th class='bigTd'>Calin</th>
+    
+  </tr>
+</thead> 
+  
+ <tbody class='tbody' fxFlex="100%" id='calendar'>
+  <tr fxFlex="100%" *ngFor='let time of arr; let i = index' #tabrow>
+  <td fxFlex="50px" class='table'><span *ngIf="time" >{{time}}:00</span></td>
+  <td class='bigTd' #idd{{i}}>
+    <div attr.ref="#{{i}}">
+      {{i}}
+    </div>
+  </td>
+  </tr>
+</tbody> 
+</table>
+</div>
+
+<div>
+  <app-cal-item></app-cal-item>
+</div>
+
+
