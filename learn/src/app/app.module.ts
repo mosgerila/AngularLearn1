@@ -10,11 +10,17 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { ItemsComponent } from './items/items.component';
 import { ServiceComponent } from './service/service.component';
-import {OperationService} from './Services2/operation.service';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { CalItemComponent } from './cal-item/cal-item.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+
+import {OperationService} from './Services2/operation.service';
+import {AppRoutingModule} from './app-routing/app-routing.module'
 
 
 
@@ -27,13 +33,17 @@ import { CalItemComponent } from './cal-item/cal-item.component';
     FooterComponent,
     CalendarComponent,
     CalItemComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
   
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppRoutingModule
 
   ],
   providers: [OperationService],

@@ -29,11 +29,12 @@ export class CalendarComponent implements OnInit {
    ngAfterViewInit(){
     const buttonElement = this._renderer.createElement('button');
     const text = this._renderer.createText('Text');
+    //var intern:ElementRef = this.elementView;
     this._renderer.addClass(buttonElement,'buttonstyle');
     //this._renderer
     this._renderer.appendChild(buttonElement, text);
-    this._renderer.appendChild(this.elementView.toArray()[1].nativeElement.cells[1], buttonElement);
-    console.log(this.elementView.toArray()[0]);
+    //this._renderer.appendChild(this.elementView.toArray()[1].nativeElement.cells[1], buttonElement);
+   // console.log(intern);
   }
 
   ngOnInit() {
